@@ -3,6 +3,10 @@
 
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import light from "@/public/icons/light.svg";
+import dark from "@/public/icons/dark.svg";
+import lightDark from "@/public/icons/lightDark.svg";
+import Image from "next/image";
 
 const ThemeSwitcher = () => {
   const [mounted, setMounted] = useState(false);
@@ -12,13 +16,25 @@ const ThemeSwitcher = () => {
     setMounted(true);
   }, []);
 
-  if (!mounted) return null;
+  if (!mounted)
+    return (
+      <div>
+        <Image src={lightDark} alt="Light/Dark icon" width={35} height={35} />
+      </div>
+    );
 
   return (
     <div>
-      The current theme is: {theme}
-      <button onClick={() => setTheme("light")}>Light Mode</button>
-      <button onClick={() => setTheme("dark")}>Dark Mode</button>
+      {theme === "light" && (
+        <button onClick={() => setTheme("dark")}>
+          <Image src={light} alt="Light logo" width={35} height={35} />
+        </button>
+      )}
+      {theme === "dark" && (
+        <button onClick={() => setTheme("light")}>
+          <Image src={dark} alt="Dark logo" width={35} height={35} />
+        </button>
+      )}
     </div>
   );
 };

@@ -1,7 +1,11 @@
+import Header from "@/modules/Header";
+
 const Home = () => {
   return (
     <div className="max-container">
-      <header>Header</header>
+      <header>
+        <Header />
+      </header>
 
       <main>
         <section className="padding-y">Hero</section>
