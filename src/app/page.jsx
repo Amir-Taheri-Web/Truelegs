@@ -1,5 +1,6 @@
 import Header from "@/modules/Header";
 import Hero from "@/modules/Hero";
+import PopularProducts from "@/modules/PopularProducts";
 
 const Home = () => {
   return (
@@ -9,11 +10,14 @@ const Home = () => {
       </header>
 
       <main>
-        <section className="2xl:max-container max-2xl:px-16 max-lg:px-8 max-sm:px-4">
+        <section className="sm:pb-40 pb-28 2xl:max-container max-2xl:px-16 max-lg:px-8 max-sm:px-4">
           <Hero />
         </section>
 
-        <section className="padding-y">Popular Products</section>
+        <section className="padding-y 2xl:max-container max-2xl:px-16 max-lg:px-8 max-sm:px-4">
+          <PopularProducts />
+        </section>
+
         <section className="padding-y">Super Quality</section>
         <section className="sm:py-12 py-4">Services</section>
         <section className="padding-y">Special</section>
