@@ -14,6 +14,10 @@
     max-width: 1440px;
     margin: 0 auto;
   }
+
+  .btn {
+    @apply flex items-center bg-coral-red py-4 px-8 rounded-full text-lg text-white gap-4;
+  }
 }
 
 @layer utilities {

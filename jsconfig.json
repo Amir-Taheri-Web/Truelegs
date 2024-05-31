@@ -6,7 +6,7 @@
       "@/app/*": ["./src/app/*"],
       "@/elements/*": ["./src/components/elements/*"],
       "@/modules/*": ["./src/components/modules/*"],
-      "@/constants/*": ["./src/app/*"],
+      "@/constants/*": ["./src/constants/*"],
       "@/providers/*": ["./src/providers/*"]
     }
   }
