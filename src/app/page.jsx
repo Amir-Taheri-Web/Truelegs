@@ -2,8 +2,8 @@ import Header from "@/modules/Header";
 
 const Home = () => {
   return (
-    <div className="max-container">
-      <header>
+    <div className="2xl:max-container max-2xl:px-16 max-lg:px-8 max-sm:px-4">
+      <header className="relative top-8 w-full">
         <Header />
       </header>
 

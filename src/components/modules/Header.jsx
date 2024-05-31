@@ -5,14 +5,16 @@ import ThemeSwitcher from "./ThemeSwitch";
 
 const Header = () => {
   return (
-    <nav>
+    <nav className="flex justify-between items-center">
       <div>
         <Image src={headerLogo} alt="Logo" width={129} height={29} />
       </div>
 
-      <ul>
+      <ul className="flex gap-4 max-lg:hidden">
         {HEADER_LINKS.map((item, index) => (
-          <li key={index}>{item}</li>
+          <li key={index} className="px-6">
+            <a href="#" className="text-lg text-slate-gray">{item}</a>
+          </li>
         ))}
       </ul>
 
