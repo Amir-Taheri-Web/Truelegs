@@ -1,5 +1,5 @@
 import { FOOTER_LINKS, SOCIAL_ICONS } from "@/constants/constants";
-import logo from "@/public/images/footer-logo.svg";
+import logo from "@/public/images/footer-logo.png";
 import Image from "next/image";
 
 const Footer = () => {
@@ -7,7 +7,7 @@ const Footer = () => {
     <div>
       <div className="flex max-xl:flex-col max-xl:gap-24 justify-between gap-44">
         <div className="flex flex-col gap-6">
-          <Image src={logo} alt="footer logo" width={160} height="auto" />
+          <Image src={logo} alt="footer logo" width={100} height="auto" />
           <p className="text-white-400 max-w-[22rem] leading-8 tracking-wider">
             Get shoes ready for the new term at your nearest Nike store. Find
             Your perfect Size In Store. Get Rewards.

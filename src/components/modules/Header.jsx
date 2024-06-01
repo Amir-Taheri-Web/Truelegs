@@ -1,5 +1,5 @@
 import Image from "next/image";
-import headerLogo from "@/public/images/header-logo.svg";
+import headerLogo from "@/public/images/header-logo.png";
 import ThemeSwitcher from "./ThemeSwitch";
 import { HEADER_LINKS } from "@/constants/constants";
 import BurgerMenu from "./BurgerMenu";
@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <nav className="flex justify-between items-center">
       <div>
-        <Image src={headerLogo} alt="Logo" width={129} height={29} priority />
+        <Image src={headerLogo} alt="Logo" width={80} height="auto" priority />
       </div>
 
       <ul className="flex gap-4 max-lg:hidden">
