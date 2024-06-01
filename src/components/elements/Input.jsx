@@ -6,7 +6,7 @@ const Input = () => {
       <input
         type="text"
         placeholder="subscribe@truelegs.com"
-        className="w-[25rem] max-xl:w-[20rem] bg-transparent max-sm:w-fit"
+        className="w-[25rem] max-xl:w-[20rem] bg-transparent outline-none max-sm:w-fit"
       />
       <div className="w-fit flex justify-center">
         <Button label="Sign Up" />

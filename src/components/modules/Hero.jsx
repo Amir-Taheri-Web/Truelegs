@@ -46,7 +46,7 @@ const Hero = () => {
       <div className="bg-hero min-h-svh flex flex-1 items-center justify-center absolute right-0 w-7/12 z-10 max-xl:rounded-xl max-xl:mt-16 max-xl:static max-xl:w-full max-xl:min-h-fit">
         <Image src={heroBg} alt="shoe image" width={610} height={502} />
 
-        <div className="absolute z-50 -bottom-20 left-0 right-0 mx-auto w-fit flex gap-8">
+        <div className="absolute z-50 -bottom-20 max-sm:-bottom-16 left-0 right-0 mx-auto w-fit flex gap-8">
           {HERO_SHOES.map((item, index) => (
             <button
               key={index}

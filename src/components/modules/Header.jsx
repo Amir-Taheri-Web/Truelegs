@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <nav className="flex justify-between items-center">
       <div>
-        <Image src={headerLogo} alt="Logo" width={80} height="auto" priority />
+        <Image src={headerLogo} alt="Logo" width={70} height="auto" priority />
       </div>
 
       <ul className="flex gap-4 max-lg:hidden">
