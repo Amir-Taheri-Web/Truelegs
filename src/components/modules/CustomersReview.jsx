@@ -30,7 +30,9 @@ const CustomersReview = () => {
               className="rounded-full object-cover"
             />
 
-            <p className="max-w-[25rem] text-lg text-slate-gray leading-7">{item.description}</p>
+            <p className="max-w-[25rem] text-lg text-slate-gray leading-7">
+              {item.description}
+            </p>
 
             <div className="flex gap-2 items-center">
               <Image src={star} alt="star icon" width={24} height={24} />

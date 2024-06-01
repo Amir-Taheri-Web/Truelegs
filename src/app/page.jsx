@@ -5,6 +5,7 @@ import PopularProducts from "@/modules/PopularProducts";
 import Services from "@/modules/Services";
 import Special from "@/modules/Special";
 import SuperQuality from "@/modules/SuperQuality";
+import Updates from "@/modules/Updates";
 
 const Home = () => {
   return (
@@ -40,7 +41,9 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="padding-y">Updates</section>
+        <section className="padding-y 2xl:max-container max-2xl:px-16 max-lg:px-8 max-sm:px-4">
+          <Updates />
+        </section>
       </main>
 
       <footer>Footer</footer>
