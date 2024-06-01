@@ -11,6 +11,9 @@ import truck from "@/public/icons/truck-fast.svg";
 import shield from "@/public/icons/shield-tick.svg";
 import support from "@/public/icons/support.svg";
 
+import customer1 from "@/public/images/customer1.jpeg";
+import customer2 from "@/public/images/customer2.svg";
+
 const HEADER_LINKS = ["Home", "About Us", "Products", "Contact Us"];
 
 const STATISTICS = [
@@ -53,4 +56,28 @@ const SERVICES = [
   },
 ];
 
-export { HEADER_LINKS, STATISTICS, HERO_SHOES, POPULAR_SHOES, SERVICES };
+const CUSTOMERS = [
+  {
+    avatar: customer1,
+    name: "Morich Brown",
+    rating: 4.9,
+    description:
+      "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!",
+  },
+  {
+    avatar: customer2,
+    name: "Lota Mongeskar",
+    rating: 4.6,
+    description:
+      "The product not only met but exceeded my expectations. I'll definitely be a returning customer!",
+  },
+];
+
+export {
+  HEADER_LINKS,
+  STATISTICS,
+  HERO_SHOES,
+  POPULAR_SHOES,
+  SERVICES,
+  CUSTOMERS,
+};

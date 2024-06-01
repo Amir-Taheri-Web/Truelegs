@@ -1,3 +1,4 @@
+import CustomersReview from "@/modules/CustomersReview";
 import Header from "@/modules/Header";
 import Hero from "@/modules/Hero";
 import PopularProducts from "@/modules/PopularProducts";
@@ -33,7 +34,12 @@ const Home = () => {
           <Special />
         </section>
 
-        <section className="padding-y">Customers</section>
+        <section className="padding-y bg-pale-blue">
+          <div className="2xl:max-container max-2xl:px-16 max-lg:px-8 max-sm:px-4">
+            <CustomersReview />
+          </div>
+        </section>
+
         <section className="padding-y">Updates</section>
       </main>
 
