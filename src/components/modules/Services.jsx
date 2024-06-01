@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Services = () => {
   return (
-    <ul className="flex flex-wrap gap-10">
+    <ul className="grid grid-cols-3 max-xl:grid-cols-2 max-sm:grid-cols-1 gap-10 justify-between">
       {SERVICES.map((item, index) => (
         <ServicesCard item={item} key={index} />
       ))}

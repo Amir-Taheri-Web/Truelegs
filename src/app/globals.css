@@ -16,7 +16,7 @@
   }
 
   .btn {
-    @apply flex items-center bg-coral-red py-4 px-8 rounded-full text-lg text-white gap-4;
+    @apply flex items-center bg-coral-red py-4 px-8 max-sm:py-3 max-sm:px-5 rounded-full max-sm:text-base text-lg text-white gap-4;
   }
 }
 

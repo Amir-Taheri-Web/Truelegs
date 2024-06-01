@@ -24,7 +24,7 @@ const ThemeSwitcher = () => {
     );
 
   return (
-    <div>
+    <div className="bg-white flex items-center justify-center p-2 rounded-lg shadow-lg">
       {theme === "light" && (
         <button onClick={() => setTheme("dark")}>
           <Image src={light} alt="Light logo" width={35} height={35} />

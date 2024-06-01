@@ -5,7 +5,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div>
-      <div className="flex justify-between gap-44">
+      <div className="flex max-xl:flex-col max-xl:gap-24 justify-between gap-44">
         <div className="flex flex-col gap-6">
           <Image src={logo} alt="footer logo" width={160} height="auto" />
           <p className="text-white-400 max-w-[22rem] leading-8 tracking-wider">
@@ -29,7 +29,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="flex justify-between gap-8 flex-1">
+        <div className="flex max-sm:flex-col justify-between gap-8 flex-1">
           {FOOTER_LINKS.map((item, index) => (
             <ul key={index} className="flex flex-col gap-4">
               <h3 className="text-white-400 text-2xl mb-4 font-semibold">
@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="mt-24 flex justify-between flex-wrap gap-8">
+      <div className="mt-24 justify-between flex-wrap gap-8">
         <p className="text-white-400">© Copyright. All rights reserved</p>
         <p className="text-white-400">
           <a href="#">Terms & Conditions</a>

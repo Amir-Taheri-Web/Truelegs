@@ -47,7 +47,7 @@ const Home = () => {
         </section>
       </main>
 
-      <footer className="bg-black padding-t pb-8">
+      <footer className="bg-black padding-x padding-t pb-8">
         <div className="2xl:max-container max-2xl:px-16 max-lg:px-8 max-sm:px-4">
           <Footer />
         </div>

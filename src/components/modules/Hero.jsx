@@ -12,15 +12,15 @@ const Hero = () => {
   const [heroBg, setHeroBg] = useState(heroImage);
 
   return (
-    <div className="flex justify-between relative">
-      <div className="relative z-40 flex flex-col justify-center min-h-svh">
+    <div className="flex justify-between relative max-xl:flex-col">
+      <div className="relative z-40 flex flex-col justify-center min-h-svh max-xl:static max-xl:min-h-fit max-xl:mt-40 max-sm:mt-32">
         <p className="text-2xl text-coral-red pb-8">Our summer collections</p>
 
-        <h1 className="text-8xl font-bold leading-[100px]">
-          <span className="bg-white block p-8 pl-0 rounded-tr-md rounded-br-md">
+        <h1 className="text-8xl font-bold leading-[100px] max-sm:text-4xl">
+          <span className="bg-white block max-xl:p-0 p-8 pl-0 rounded-tr-md rounded-br-md">
             The New Arrival{" "}
           </span>
-          <span className="text-coral-red">Nike </span>
+          <span className="text-coral-red">Truelegs </span>
           Shoes
         </h1>
 
@@ -33,17 +33,17 @@ const Hero = () => {
           <Button label="Shop now" icon={arrow} />
         </div>
 
-        <ul className="mt-20 flex gap-12">
+        <ul className="mt-20 max-sm:mt-10 flex flex-wrap gap-12">
           {STATISTICS.map((item, index) => (
             <li key={index} className="flex flex-col gap-1">
-              <span className="text-4xl font-semibold">{item.amount}</span>
+              <span className="text-4xl font-semibold max-sm:text-3xl">{item.amount}</span>
               <span className="text-slate-gray text-base">{item.label}</span>
             </li>
           ))}
         </ul>
       </div>
 
-      <div className="bg-hero min-h-svh flex flex-1 items-center justify-center absolute right-0 w-7/12 z30">
+      <div className="bg-hero min-h-svh flex flex-1 items-center justify-center absolute right-0 w-7/12 z30 max-xl:rounded-xl max-xl:mt-16 max-xl:static max-xl:w-full max-xl:min-h-fit">
         <Image src={heroBg} alt="shoe image" width={610} height={502} />
 
         <div className="absolute z-50 -bottom-20 left-0 right-0 mx-auto w-fit flex gap-8">

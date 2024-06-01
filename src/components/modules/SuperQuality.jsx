@@ -5,9 +5,9 @@ import shoe from "@/public/images/shoe8.svg";
 
 const SuperQuality = () => {
   return (
-    <div className="flex justify-between gap-8">
+    <div className="flex justify-between gap-8 max-lg:flex-col">
       <div className="max-w-[35rem]">
-        <h2 className="text-4xl font-bold leading-[4rem]">
+        <h2 className="text-4xl max-sm:text-3xl font-bold leading-[4rem]">
           We provide you <span className="text-coral-red">Super Quality </span>{" "}
           Shoes
         </h2>
@@ -25,7 +25,7 @@ const SuperQuality = () => {
         <Button label="Shop now" icon={arrow} />
       </div>
 
-      <div>
+      <div className="max-lg:self-center max-lg:w-[400] max-lg:h-350 max-sm:w-full max-sm:h-auto">
         <Image src={shoe} alt="shoe image" width={570} height={522} />
       </div>
     </div>

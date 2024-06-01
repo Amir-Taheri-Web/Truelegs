@@ -5,7 +5,7 @@ import star from "@/public/icons/star.svg";
 const PopularProducts = () => {
   return (
     <div>
-      <h2 className="text-4xl font-bold">
+      <h2 className="text-4xl font-bold max-sm:text-3xl">
         Our <span className="text-coral-red">Popular</span> Products
       </h2>
 
@@ -14,7 +14,7 @@ const PopularProducts = () => {
         Discover a world of comfort, design, and value
       </p>
 
-      <ul className="grid grid-cols-4 gap-14">
+      <ul className="grid grid-cols-4 gap-14 max-lg:grid-cols-3 max-sm:grid-cols-2">
         {POPULAR_SHOES.map((item) => (
           <li key={item.title}>
             <div className="bg-card bg-cover rounded-xl w-fit">
@@ -32,7 +32,7 @@ const PopularProducts = () => {
               <span className="text-xl text-slate-gray">({item.rating})</span>
             </div>
 
-            <h3 className="text-2xl font-semibold">{item.title}</h3>
+            <h3 className="text-2xl font-semibold max-sm:text-xl">{item.title}</h3>
             <span className="block mt-3 text-xl text-coral-red">${item.price}</span>
           </li>
         ))}

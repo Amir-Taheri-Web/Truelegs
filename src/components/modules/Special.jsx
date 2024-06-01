@@ -5,13 +5,13 @@ import arrow from "@/public/icons/arrow-right.svg";
 
 const Special = () => {
   return (
-    <div className="flex flex-wrap-reverse gap-12 items-center">
-      <div>
-        <Image src={bg} alt="background image" width={700} height={600} />
+    <div className="flex max-lg:flex-wrap-reverse gap-12 items-center">
+      <div className="max-lg:hidden">
+        <Image src={bg} alt="background image" width={700} height={600} className="max-xl:mx-auto" />
       </div>
 
       <div className="max-w-[35rem]">
-        <h2 className="text-4xl font-bold leading-[4rem]">
+        <h2 className="text-4xl max-sm:text-3xl font-bold leading-[4rem]">
           <span className="text-coral-red">Special</span> Offer
         </h2>
 
