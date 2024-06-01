@@ -7,6 +7,10 @@ import shoe5 from "@/public/images/shoe5.svg";
 import shoe6 from "@/public/images/shoe6.svg";
 import shoe7 from "@/public/images/shoe7.svg";
 
+import truck from "@/public/icons/truck-fast.svg";
+import shield from "@/public/icons/shield-tick.svg";
+import support from "@/public/icons/support.svg";
+
 const HEADER_LINKS = ["Home", "About Us", "Products", "Contact Us"];
 
 const STATISTICS = [
@@ -28,4 +32,25 @@ const POPULAR_SHOES = [
   { image: shoe7, rating: 3.5, title: "Nike Air Jordan-101", price: 520.5 },
 ];
 
-export { HEADER_LINKS, STATISTICS, HERO_SHOES, POPULAR_SHOES };
+const SERVICES = [
+  {
+    icon: truck,
+    title: "Free shipping",
+    description:
+      "Enjoy seamless shopping with our complimentary shipping service.",
+  },
+  {
+    icon: shield,
+    title: "Secure payment",
+    description:
+      "Experience worry-free transactions with our secure payment options.",
+  },
+  {
+    icon: support,
+    title: "Love to help you",
+    description:
+      "Our dedicated team is here to assist you every step of the way.",
+  },
+];
+
+export { HEADER_LINKS, STATISTICS, HERO_SHOES, POPULAR_SHOES, SERVICES };
