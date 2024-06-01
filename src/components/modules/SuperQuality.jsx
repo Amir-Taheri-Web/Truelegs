@@ -12,13 +12,13 @@ const SuperQuality = () => {
           Shoes
         </h2>
 
-        <p className="text-xl mt-6 mb-12 text-slate-gray leading-7">
+        <p className="text-xl mt-6 mb-12 text-slate-gray dark:text-white leading-7">
           Ensuring premium comfort and style, our meticulously crafted footwear
           is designed to elevate your experience, providing you with unmatched
           quality, innovation, and a touch of elegance.
         </p>
 
-        <p className="mt-6 mb-12 text-xl text-slate-gray leading-7">
+        <p className="mt-6 mb-12 text-xl text-slate-gray dark:text-white leading-7">
           Our dedication to detail and excellence ensures your satisfaction.
         </p>
 

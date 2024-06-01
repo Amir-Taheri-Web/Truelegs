@@ -18,11 +18,15 @@
   .btn {
     @apply flex items-center bg-coral-red py-4 px-8 max-sm:py-3 max-sm:px-5 rounded-full max-sm:text-base text-lg text-white gap-4;
   }
+
+  body {
+    @apply dark:bg-[#191919];
+  }
 }
 
 @layer utilities {
   .padding {
-    @apply sm:px-16 px-8 sm:py-24 py-12;
+    @apply sm:px-16 px-8 sm:py-24 py-20;
   }
 
   .padding-x {
@@ -30,7 +34,7 @@
   }
 
   .padding-y {
-    @apply sm:py-24 py-12;
+    @apply sm:py-24 py-20;
   }
 
   .padding-l {
@@ -42,10 +46,80 @@
   }
 
   .padding-t {
-    @apply sm:pt-24 pt-12;
+    @apply sm:pt-24 pt-20;
   }
 
   .padding-b {
-    @apply sm:pb-24 pb-12;
+    @apply sm:pb-24 pb-20;
   }
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: relative;
+  z-index: 100;
+  width: 36px;
+  height: 30px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #ff6452;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #ff6452;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #fff;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  z-index: 1000;
+  height: 100%;
+  top: 0;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #ff6452;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #fff;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  left: 0;
+  top: 0;
+  background: none;
 }

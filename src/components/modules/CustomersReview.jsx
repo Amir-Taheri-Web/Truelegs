@@ -7,7 +7,7 @@ const CustomersReview = () => {
     <div>
       <div className="text-center mb-20">
         {" "}
-        <h2 className="text-4xl max-sm:text-3xl font-bold">
+        <h2 className="text-4xl dark:text-black max-sm:text-3xl font-bold">
           What Our <span className="text-coral-red">Customers</span> Say?
         </h2>
         <p className="max-w-[30rem] text-lg mt-4 mx-auto mb-12 text-slate-gray leading-7">
@@ -39,7 +39,7 @@ const CustomersReview = () => {
               <span className="text-xl text-slate-gray">({item.rating})</span>
             </div>
 
-            <h3 className="text-2xl font-bold">{item.name}</h3>
+            <h3 className="text-2xl font-bold dark:text-black">{item.name}</h3>
           </div>
         ))}
       </div>

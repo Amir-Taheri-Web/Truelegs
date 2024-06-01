@@ -15,13 +15,13 @@ const Special = () => {
           <span className="text-coral-red">Special</span> Offer
         </h2>
 
-        <p className="text-xl mt-6 mb-12 text-slate-gray leading-7">
+        <p className="text-xl mt-6 mb-12 text-slate-gray dark:text-white leading-7">
           Embark on a shopping journey that redefines your experience with
           unbeatable deals. From premier selections to incredible savings, we
           offer unparalleled value that sets us apart.
         </p>
 
-        <p className="mt-6 mb-12 text-xl text-slate-gray leading-7">
+        <p className="mt-6 mb-12 text-xl text-slate-gray dark:text-white leading-7">
           Navigate a realm of possibilities designed to fulfill your unique
           desires, surpassing the loftiest expectations. Your journey with us is
           nothing short of exceptional.

@@ -9,7 +9,7 @@ const PopularProducts = () => {
         Our <span className="text-coral-red">Popular</span> Products
       </h2>
 
-      <p className="max-w-[30rem] mt-6 mb-12 text-slate-gray leading-7">
+      <p className="max-w-[30rem] mt-6 mb-12 text-slate-gray dark:text-white leading-7">
         Experience top-notch quality and style with our sought-after selections.
         Discover a world of comfort, design, and value
       </p>

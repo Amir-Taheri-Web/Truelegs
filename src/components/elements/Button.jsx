@@ -6,7 +6,7 @@ const Button = ({ label, icon, noBg }) => {
       type="button"
       className={`btn ${
         noBg
-          ? "bg-transparent border border-slate-gray text-slate-gray"
+          ? "bg-transparent border border-slate-gray dark:border-white text-slate-gray dark:text-white"
           : null
       }`}
     >

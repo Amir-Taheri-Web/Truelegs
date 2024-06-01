@@ -13,18 +13,18 @@ const Hero = () => {
 
   return (
     <div className="flex justify-between relative max-xl:flex-col">
-      <div className="relative z-40 flex flex-col justify-center min-h-svh max-xl:static max-xl:min-h-fit max-xl:mt-40 max-sm:mt-32">
+      <div className="relative z-20 max-lg:-z-20 flex flex-col justify-center min-h-svh max-xl:static max-xl:min-h-fit max-xl:mt-40 max-sm:mt-32">
         <p className="text-2xl text-coral-red pb-8">Our summer collections</p>
 
-        <h1 className="text-8xl font-bold leading-[100px] max-sm:text-4xl">
-          <span className="bg-white block max-xl:p-0 p-8 pl-0 rounded-tr-md rounded-br-md">
+        <h1 className="text-8xl font-bold leading-[100px] max-sm:text-4xl z-10 bg-white dark:bg-dark-bg max-xl:bg-transparent relative block max-xl:p-0 p-8 pl-0 rounded-tr-md rounded-br-md">
+          <span className="bg-white dark:bg-transparent max-xl:bg-transparent relative block max-xl:p-0 p-8 pl-0 rounded-tr-md rounded-br-md">
             The New Arrival{" "}
           </span>
           <span className="text-coral-red">Truelegs </span>
           Shoes
         </h1>
 
-        <p className="text-slate-gray text-lg leading-8 mt-4 mb-14 tracking-wider">
+        <p className="text-slate-gray dark:text-white text-lg leading-8 mt-4 mb-14 tracking-wider">
           <span className="block">Discover stylish Nike arrivals, quality</span>{" "}
           comfort, and innovation for your active life.
         </p>
@@ -43,7 +43,7 @@ const Hero = () => {
         </ul>
       </div>
 
-      <div className="bg-hero min-h-svh flex flex-1 items-center justify-center absolute right-0 w-7/12 z30 max-xl:rounded-xl max-xl:mt-16 max-xl:static max-xl:w-full max-xl:min-h-fit">
+      <div className="bg-hero min-h-svh flex flex-1 items-center justify-center absolute right-0 w-7/12 z-10 max-xl:rounded-xl max-xl:mt-16 max-xl:static max-xl:w-full max-xl:min-h-fit">
         <Image src={heroBg} alt="shoe image" width={610} height={502} />
 
         <div className="absolute z-50 -bottom-20 left-0 right-0 mx-auto w-fit flex gap-8">
