@@ -14,6 +14,10 @@ import support from "@/public/icons/support.svg";
 import customer1 from "@/public/images/customer1.jpeg";
 import customer2 from "@/public/images/customer2.svg";
 
+import facebook from "@/public/icons/facebook.svg";
+import instagram from "@/public/icons/instagram.svg";
+import twitter from "@/public/icons/twitter.svg";
+
 const HEADER_LINKS = ["Home", "About Us", "Products", "Contact Us"];
 
 const STATISTICS = [
@@ -73,6 +77,37 @@ const CUSTOMERS = [
   },
 ];
 
+const SOCIAL_ICONS = [
+  { icon: facebook, alt: "facebook" },
+  { icon: instagram, alt: "instagram" },
+  { icon: twitter, alt: "twitter" },
+];
+
+const FOOTER_LINKS = [
+  {
+    title: "Products",
+    links: [
+      "Air Force 1",
+      "Air Max 1",
+      "Air Jordan 1",
+      "Air Force 2",
+      "Nike Waffle Racer",
+      "Nike Cortez",
+    ],
+  },
+  {
+    title: "Help",
+    links: [
+      "About Us",
+      "FAQs",
+      "How it Works",
+      "Privacy Policy",
+      "Payment Policy",
+    ],
+  },
+  { title: "Get in touch", links: ["customers@trulegs.com", "+29928947384"] },
+];
+
 export {
   HEADER_LINKS,
   STATISTICS,
@@ -80,4 +115,6 @@ export {
   POPULAR_SHOES,
   SERVICES,
   CUSTOMERS,
+  SOCIAL_ICONS,
+  FOOTER_LINKS,
 };

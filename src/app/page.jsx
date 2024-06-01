@@ -1,4 +1,5 @@
 import CustomersReview from "@/modules/CustomersReview";
+import Footer from "@/modules/Footer";
 import Header from "@/modules/Header";
 import Hero from "@/modules/Hero";
 import PopularProducts from "@/modules/PopularProducts";
@@ -46,7 +47,11 @@ const Home = () => {
         </section>
       </main>
 
-      <footer>Footer</footer>
+      <footer className="bg-black padding-t pb-8">
+        <div className="2xl:max-container max-2xl:px-16 max-lg:px-8 max-sm:px-4">
+          <Footer />
+        </div>
+      </footer>
     </div>
   );
 };
