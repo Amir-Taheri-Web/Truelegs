@@ -2,6 +2,7 @@ import Header from "@/modules/Header";
 import Hero from "@/modules/Hero";
 import PopularProducts from "@/modules/PopularProducts";
 import Services from "@/modules/Services";
+import Special from "@/modules/Special";
 import SuperQuality from "@/modules/SuperQuality";
 
 const Home = () => {
@@ -28,7 +29,10 @@ const Home = () => {
           <Services />
         </section>
 
-        <section className="padding-y">Special</section>
+        <section className="padding-y 2xl:max-container max-2xl:px-16 max-lg:px-8 max-sm:px-4">
+          <Special />
+        </section>
+
         <section className="padding-y">Customers</section>
         <section className="padding-y">Updates</section>
       </main>
